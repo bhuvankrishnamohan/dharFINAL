@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Help & Rescue Organization</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="center-title">
+            <img src="MainLogo.jpg" alt="Organization Logo" class="logo-top">
+            <h3>Dogs Help and Rescue</h3>
+        </div>
+        <div class="donate-button">
+            <a href="#donate">Donate</a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="mission.html">Our Mission</a>
+        <a href="help.html">How Can We Help</a>
+    </nav>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <div class="slide active-slide">
+            <img src="saddog.jpg" alt="Sad Dog">
+            <div class="text">
+                <p>No Home for the Holidays!</p>
+                <div class="message">
+                    <p>Your donation can save lives! Together, lets find homes for these puppies!</p>
+                </div>
+                <div class="button-54">
+                    <a href="#donate">Donate Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="lostdog.png" alt="Lost Dog">
+            <div class="text">
+                <p>Every Dog Deserves Love!</p>
+                <div class="message">
+                    <p>Just 20¢ goes a long way for the lives of these innocent creatures!</p>
+                </div>
+                <div class="button-54">
+                    <a href="#donate">Donate Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="dogsplaying.jpg" alt="Dogs Playing">
+            <div class="text">
+                <p>Help Us Make a Difference!</p>
+                <div class="message">
+                    <p>Adopt! Not Shop! Spread the word about the cruel puppy mills!</p>
+                </div>
+                <div class="button-54">
+                    <a href="#donate">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Dog Help & Rescue</h2>
+        <p>We are dedicated to rescuing, rehabilitating, and finding loving homes for dogs in need.</p>
+    
+        <!-- Additional content section -->
+        <div class="home-content">
+            <h3>Our Mission</h3>
+            <p>At DHAR, we believe that every dog deserves a chance at a happy, healthy life. Our mission is to rescue dogs from shelters, provide them with medical care and love, and find them forever homes where they can thrive. We're committed to making a difference in the lives of dogs and their future families.</p>
+    
+            <h3>How You Can Help</h3>
+            <p>Your support is crucial to our work. There are many ways you can make a difference:</p>
+            <ul>
+                <li><strong>Adopt:</strong> Find your new best friend from our list of available dogs.</li>
+                <li><strong>Donate:</strong> Your generous contributions help provide medical care, food, and shelter for dogs in need.</li>
+                <li><strong>Volunteer:</strong> Volunteer your time and skills to help with our rescue efforts.</li>
+                <li><strong>Spread the Word:</strong> Share our mission and help us raise awareness about the importance of dog rescue.</li>
+            </ul>
+    
+            <h3>Join Us Today!</h3>
+            <p>Whether you're looking to adopt, donate, or volunteer, there are many ways you can get involved with Dog Help & Rescue. Together, we can create a better future for dogs in need.</p>
+            <div class="donate-button">
+                <a href="#donate" class="button-54">Donate Now</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Main Content Section -->
+    <section class="donate-section" style="background-image: url('puppyback.jpg');">
+        <div class="text-overlay">
+            <p class="donate-text">Help the DHAR Organization Put an End to the Cruelty of Puppy Mills!</p>
+            <a href="#donate" class="button-54">Donate Now</a>
+        </div>
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <img src="MainLogo.jpg" alt="DHAR Organization Logo" class="logo">
+            <p>&copy; 2024 DHAR Organization. All rights reserved.</p>
+    </footer>
+
+    <!-- Slideshow Script -->
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active-slide');
+                if (index === currentIndex) {
+                    slide.classList.add('active-slide');
+                }
+            });
+            currentIndex = (currentIndex + 1) % slides.length;
+        }
+
+        setInterval(showSlides, 7000);
+    </script>
+</body>
+</html>
