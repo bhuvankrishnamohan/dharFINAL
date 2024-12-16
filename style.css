@@ -261,3 +261,104 @@ nav a:hover {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+.about-section .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem; /* Larger text size */
+    font-family: 'Lato', sans-serif; /* Clean and modern font */
+    font-weight: 900; /* Extra bold */
+    color: #333; /* Dark text for contrast */
+    text-transform: uppercase;
+    text-align: center;
+    background: #fff; /* White background for contrast */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border: 5px solid #f4b400; /* Yellow/Orange border */
+}
+.about-section .overlay-text .accent-orange {
+    color: #f4b400; /* Orange text */
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+.divider {
+    background-color: #f4b400;
+    height: 10px;
+    width: 100%;
+}
+
+/* Mission Section Styling */
+.mission-section {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f4b400;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.mission-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Mission Points Section */
+.mission-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mission-point {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.point-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.point-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.point-image {
+    width: 60%;  /* Smaller size for images */
+    max-width: 200px;  /* Limit max width */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+    border-radius: 8px;
+}
