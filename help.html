@@ -26,24 +26,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 3rem; /* Larger text size */
-            font-family: 'Lato', sans-serif; /* Clean and modern font */
-            font-weight: 900; /* Extra bold */
-            color: #333; /* Dark text for contrast */
-            text-transform: uppercase;
-            text-align: center;
-            background: #fff; /* White background for contrast */
-            padding: 10px 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-            border: 5px solid #f4b400; /* Yellow/Orange border */
-        }
-        .about-section .overlay-text .accent-orange {
-            color: #f4b400; /* Orange text */
-            font-size: 1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 10px;
+            font-size: 3rem;
+            font-weight: bold;
         }
         .divider {
             background-color: #f4b400;
@@ -80,42 +64,68 @@
         <a href="mission.html">Our Mission</a>
         <a href="help.html">How We Help</a>
         <a href="donate.html">Donate</a>
-
     </nav>
 <body>
     <!-- Background Image with About Us -->
     <section class="about-section">
-        <img src="background4.jpg" alt="About Us Background">
-        <div class="overlay-text">
-            Our Mission
-        </div>
+        <img src="puppyback.jpg" alt="About Us Background">
+        <div class="overlay-text">What Do We Do?</div>
     </section>
 
     <!-- Divider -->
     <div class="divider"></div>
     
     <!-- About Our Mission Section -->
-    <section class="mission-section" style="background-color: #111; color: #fff; padding: 40px 20px; font-family: 'Lato', sans-serif;">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 20px; border-bottom: 2px solid #f4b400; display: inline-block; padding-bottom: 10px;">
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="mission-content">
+            <h2 class="mission-title">
                 Our Mission
             </h2>
-            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+            <p class="mission-text">
                 At <strong>Dogs Help and Rescue (DHAR)</strong>, our mission is to raise awareness about the cruel practice of puppy mills and advocate for the well-being of dogs who suffer in these inhumane conditions.
             </p>
-            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+            <p class="mission-text">
                 <strong>Puppy mills</strong> are commercial breeding operations that prioritize profit over the health and welfare of animals. These facilities often house dogs in overcrowded, unsanitary conditions without access to proper veterinary care, socialization, or a safe living environment.
             </p>
-            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+            <p class="mission-text">
                 Our goal is to <strong>educate the public</strong> about the harsh realities of puppy mills and promote responsible pet ownership. We strive to provide rescue and rehabilitation to dogs rescued from these mills, offering them a second chance at a loving, healthy life.
             </p>
-            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 0; text-align: justify;">
+            <p class="mission-text">
                 With the support of compassionate individuals like you, we are working to <strong>end the cycle of cruelty</strong> and give every dog the chance to live a life of happiness and freedom. <em>Together, we can make a difference.</em>
             </p>
-            <img src="LOGO.png" alt="Puppy Mills Awareness" class="point-image" style="width: 180%; max-width: 600px; margin-top: 20px; margin-left: auto; margin-right: auto;">
+
+            <!-- Three Key Points -->
+            <div class="mission-points">
+                <!-- Adopt, Don't Shop -->
+                <div class="mission-point">
+                    <h3 class="point-title">Adopt, Don’t Shop</h3>
+                    <p class="point-description">
+                        We encourage you to adopt puppies from animal shelters instead of purchasing dogs from breeders or pet stores. Shelters are filled with loving animals waiting for a forever home, and adopting helps reduce the demand for puppy mills.
+                    </p>
+                    <img src="adopt.png" alt="Adopt Puppies" class="point-image">
+                </div>
+
+                <!-- Raise Funds for Shelters -->
+                <div class="mission-point">
+                    <h3 class="point-title">Raise Funds to Support Animal Shelters</h3>
+                    <p class="point-description">
+                        Many animal shelters are forced to euthanize dogs due to lack of capacity and funding. Your support will help fund organizations like the U.S. Humane Society and the ASPCA, enabling them to save more lives and provide proper care.
+                    </p>
+                    <img src="animalshelter.png" alt="Animal Shelters" class="point-image">
+                </div>
+
+                <!-- Spread Awareness about Puppy Mills -->
+                <div class="mission-point">
+                    <h3 class="point-title">Spread Awareness About Puppy Mills</h3>
+                    <p class="point-description">
+                        Puppy mills are horrific breeding operations that prioritize profit over animal welfare. Dogs in these mills endure severe abuse and neglect. By spreading awareness, we can stop the cycle of cruelty and prevent future generations from suffering.
+                    </p>
+                    <img src="puppymill.png" alt="Puppy Mills Awareness" class="point-image">
+                </div>
+            </div>
         </div>
     </section>
-    
 
     
     <!-- Main Content Section -->
